@@ -28,7 +28,7 @@ Personal developer portfolio website showcasing full-stack MERN applications, re
 Clone the repository and open `index.html` directly in your browser:
 
 ```bash
-git clone https://github.com/projjal2002/Projjal-Paul-Portfolio.git
+git clone https://github.com/Prorick44/Projjal-Paul-Portfolio.git
 cd Projjal-Paul-Portfolio
 ```
 

@@ -23,7 +23,7 @@ const PORTFOLIO_DATA = {
     location: "West Bengal, India",
     phone: "+91-9073481347",
     email: "projjal2003@gmail.com",
-    github: "https://github.com/projjal2002",
+    github: "https://github.com/Prorick44",
     linkedin: "https://linkedin.com/in/projjal2002",
     codechef: "https://www.codechef.com/users/projjal2002",
     twitter: "https://twitter.com",
@@ -146,8 +146,8 @@ const PORTFOLIO_DATA = {
         { label: "Media & Auth", value: "WebRTC/Firebase" }
       ],
       techStack: ["React.js", "Node.js", "Express.js", "Socket.io", "Monaco Editor", "Firebase", "WebRTC", "CSS3"],
-      githubUrl: "https://github.com/projjal2002",
-      liveUrl: "https://github.com/projjal2002"
+      githubUrl: "https://github.com/Prorick44",
+      liveUrl: "https://github.com/Prorick44"
     },
     {
       id: "realtime-weather-dashboard",
@@ -171,8 +171,8 @@ const PORTFOLIO_DATA = {
         { label: "Forecast Window", value: "7-Day Visuals" }
       ],
       techStack: ["React.js", "Redux Toolkit", "OpenWeather API", "Chart.js", "CSS3", "Vercel"],
-      githubUrl: "https://github.com/projjal2002",
-      liveUrl: "https://github.com/projjal2002"
+      githubUrl: "https://github.com/Prorick44",
+      liveUrl: "https://github.com/Prorick44"
     },
     {
       id: "algorithmic-code-vault",
@@ -196,7 +196,7 @@ const PORTFOLIO_DATA = {
         { label: "Contests", value: "20+ Contests" }
       ],
       techStack: ["C++", "Java", "Python", "DSA", "CodeChef", "Git"],
-      githubUrl: "https://github.com/projjal2002",
+      githubUrl: "https://github.com/Prorick44",
       liveUrl: "https://www.codechef.com/users/projjal2002"
     },
     {
@@ -221,8 +221,8 @@ const PORTFOLIO_DATA = {
         { label: "Deployment", value: "Render & Vercel" }
       ],
       techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "MySQL", "Redux Toolkit", "Render", "Vercel"],
-      githubUrl: "https://github.com/projjal2002",
-      liveUrl: "https://github.com/projjal2002"
+      githubUrl: "https://github.com/Prorick44",
+      liveUrl: "https://github.com/Prorick44"
     }
   ],
 
@@ -363,7 +363,7 @@ Location: West Bengal, India | Open for Full-Time Opportunities.`,
 - <b>Phone</b>    : +91-9073481347
 - <b>Email</b>    : projjal2003@gmail.com
 - <b>LinkedIn</b> : linkedin.com/in/projjal2002
-- <b>GitHub</b>   : github.com/projjal2002
+- <b>GitHub</b>   : github.com/Prorick44
 - <b>Location</b> : West Bengal, India`,
 
     hire: `Hiring Status: 🟢 <span style="color:#10b981;font-weight:bold;">OPEN FOR SOFTWARE ENGINEER ROLES</span>

@@ -4,8 +4,8 @@ echo ===================================================
 echo   Pushing Portfolio to GitHub
 echo ===================================================
 echo.
-set /p REPO_URL="Enter your GitHub Repository URL (or press Enter for default https://github.com/projjal2002/Projjal-Paul-Portfolio.git): "
-if "%REPO_URL%"=="" set REPO_URL=https://github.com/projjal2002/Projjal-Paul-Portfolio.git
+set /p REPO_URL="Enter your GitHub Repository URL (or press Enter for default https://github.com/Prorick44/Projjal-Paul-Portfolio.git): "
+if "%REPO_URL%"=="" set REPO_URL=https://github.com/Prorick44/Projjal-Paul-Portfolio.git
 
 git remote remove origin 2>nul
 git remote add origin %REPO_URL%
