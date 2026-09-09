@@ -86,7 +86,7 @@
    • **Score**: **Percentage: 91.20%**
 3. **Secondary Education (WBBSE Class X)** (2019)
    • **Institution**: Patha Bhavan (Dankuni)
-   • **Score**: **Percentage: 81.14%**`,
+   • **Score**: **Percentage: 91.14%**`,
         actions: [
           { label: "View Education Details", action: "scrollTo:#experience" }
         ]

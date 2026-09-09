@@ -61,7 +61,7 @@ const PORTFOLIO_DATA = {
           degree: "Secondary Education (WBBSE)",
           institution: "Patha Bhavan (Dankuni)",
           year: "2019",
-          score: "Percentage: 81.14%"
+          score: "Percentage: 91.14%"
         }
       ],
       languages: [
@@ -146,8 +146,8 @@ const PORTFOLIO_DATA = {
         { label: "Media & Auth", value: "WebRTC/Firebase" }
       ],
       techStack: ["React.js", "Node.js", "Express.js", "Socket.io", "Monaco Editor", "Firebase", "WebRTC", "CSS3"],
-      githubUrl: "https://github.com/Prorick44",
-      liveUrl: "https://github.com/Prorick44"
+      githubUrl: "https://github.com/Prorick44/real-time-interview-prep-project",
+      liveUrl: "https://real-time-interview-prep-project.vercel.app/"
     },
     {
       id: "realtime-weather-dashboard",
@@ -171,8 +171,8 @@ const PORTFOLIO_DATA = {
         { label: "Forecast Window", value: "7-Day Visuals" }
       ],
       techStack: ["React.js", "Redux Toolkit", "OpenWeather API", "Chart.js", "CSS3", "Vercel"],
-      githubUrl: "https://github.com/Prorick44",
-      liveUrl: "https://github.com/Prorick44"
+      githubUrl: "https://github.com/Prorick44/weather-app",
+      liveUrl: "https://weather-app-beige-ten-65.vercel.app/"
     },
     {
       id: "algorithmic-code-vault",
@@ -264,7 +264,7 @@ const PORTFOLIO_DATA = {
       degree: "Secondary Education (WBBSE)",
       institution: "Patha Bhavan (Dankuni)",
       period: "2019",
-      score: "Percentage: 81.14%",
+      score: "Percentage: 91.14%",
       location: "West Bengal, India",
       details: "Completed Secondary School Board examinations with distinction in Mathematics and Physical Sciences."
     }
@@ -294,7 +294,7 @@ const PORTFOLIO_DATA = {
   - <span class="cmd-highlight">about</span>       : Display Projjal's biography and summary
   - <span class="cmd-highlight">skills</span>      : List programming languages & core tech stack
   - <span class="cmd-highlight">projects</span>    : Output featured projects (CodeCollab, Weather Dashboard, etc.)
-  - <span class="cmd-highlight">education</span>   : View B.Tech (8.58 CGPA), 12th (91.20%), and 10th (81.14%) details
+  - <span class="cmd-highlight">education</span>   : View B.Tech (8.58 CGPA), 12th (91.20%), and 10th (91.14%) details
   - <span class="cmd-highlight">codechef</span>    : View CodeChef profile (3★, 1600+ rating, 1000+ solved, 20+ contests)
   - <span class="cmd-highlight">experience</span>  : Show full stack web development journey
   - <span class="cmd-highlight">achievements</span>: View awards, top 10% contest ranks, and mentorship
@@ -338,7 +338,7 @@ Location: West Bengal, India | Open for Full-Time Opportunities.`,
 2. <b>Higher Secondary (CBSE)</b> (2021)
    Lal Bahadur Shastri Sr. Sec. | <b>Percentage: 91.20%</b>
 3. <b>Secondary Education (WBBSE)</b> (2019)
-   Patha Bhavan (Dankuni) | <b>Percentage: 81.14%</b>`,
+   Patha Bhavan (Dankuni) | <b>Percentage: 91.14%</b>`,
 
     codechef: `Competitive Programming & CodeChef Profile:
 - <b>Rating</b>    : CodeChef 3 Star (1600+ Rating)
@@ -377,7 +377,7 @@ Location: West Bengal, India | Open for Full-Time Opportunities.`,
 - Contests Participated  : 20+ Contests
 - B.Tech CGPA            : 8.58 (Computer Science)
 - Class 12 (CBSE)        : 91.20%
-- Class 10 (WBBSE)       : 81.14%
+- Class 10 (WBBSE)       : 91.14%
 - Personal Web Projects  : 5+ Full-Stack Projects (90+ Lighthouse Score)`
   }
 };
