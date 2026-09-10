@@ -16,7 +16,7 @@ const PORTFOLIO_DATA = {
       "real-time collaborative platforms.",
       "high-performance React & Redux web apps.",
       "scalable RESTful APIs & backend services.",
-      "efficient algorithms & data structures."
+      "efficient algorithms & data structures.",
     ],
     availability: "Open for Software Engineer & Full Stack Developer Roles",
     availabilityStatus: "available", // 'available' | 'busy' | 'exploring'
@@ -33,43 +33,44 @@ const PORTFOLIO_DATA = {
       { value: "1000+", label: "Coding Problems Solved" },
       { value: "3★", label: "CodeChef Rating (1600+)" },
       { value: "8.58", label: "B.Tech CGPA" },
-      { value: "5+", label: "Full-Stack Projects Shipped" }
+      { value: "5+", label: "Full-Stack Projects Shipped" },
     ],
     resumeDetails: {
-      summary: "Result-oriented Software Engineer with a B.Tech in Computer Science and strong problem-solving skills. Proven ability to build full stack web applications using the MERN stack. Passionate about competitive programming and optimizing system performance through efficient data structures and algorithms.",
+      summary:
+        "Result-oriented Software Engineer with a B.Tech in Computer Science and strong problem-solving skills. Proven ability to build full stack web applications using the MERN stack. Passionate about competitive programming and optimizing system performance through efficient data structures and algorithms.",
       highlights: [
         "Top Project: Built Real-Time Interview Platform (CodeCollab) with Monaco Editor, Socket.io, Firebase Google Auth, and WebRTC video conferencing.",
         "Performance Engineering: Built Real-Time Weather Dashboard for 200,000+ cities with debouncing & caching (40% API overhead reduction) and Chart.js forecasts.",
         "Competitive Programming: CodeChef 3-Star (1600+ rating), ranked in top 10% in various contests with 1,000+ DSA problems solved across 20+ contests.",
         "Full-Stack Web Development: Developed & maintained 5+ personal projects with Redux Toolkit and achieved 90+ Lighthouse performance scores.",
-        "Academic & Mentorship: Consistently maintained 8.58 CGPA in B.Tech CSE while mentoring junior students in DSA and React fundamentals."
+        "Academic & Mentorship: Consistently maintained 8.58 CGPA in B.Tech CSE while mentoring junior students in DSA and React fundamentals.",
       ],
       educationList: [
         {
           degree: "B.Tech in Computer Science",
           institution: "Future Institute of Engineering and Management",
           year: "2021 – 2025",
-          score: "CGPA: 8.58"
+          score: "CGPA: 8.58",
         },
         {
           degree: "Higher Secondary (CBSE)",
           institution: "Lal Bahadur Shastri Sr. Sec.",
           year: "2021",
-          score: "Percentage: 91.20%"
+          score: "Percentage: 91.20%",
         },
         {
           degree: "Secondary Education (WBBSE)",
           institution: "Patha Bhavan (Dankuni)",
           year: "2019",
-          score: "Percentage: 91.14%"
-        }
+          score: "Percentage: 91.14%",
+        },
       ],
       languages: [
         { name: "English", level: "Professional" },
         { name: "Bengali", level: "Native" },
-        { name: "Hindi", level: "Conversational" }
-      ]
-    }
+        { name: "Hindi", level: "Conversational" },
+      ],
+    },
   },
 
   skills: [
@@ -82,8 +83,8 @@ const PORTFOLIO_DATA = {
         { name: "Python", level: 85, tag: "Proficient" },
         { name: "JavaScript (ES6+)", level: 94, tag: "Expert" },
         { name: "SQL (MySQL / Relational)", level: 88, tag: "Advanced" },
-        { name: "HTML5 & CSS3", level: 92, tag: "Expert" }
-      ]
+        { name: "HTML5 & CSS3", level: 92, tag: "Expert" },
+      ],
     },
     {
       category: "Core Full-Stack & Frontend",
@@ -94,8 +95,8 @@ const PORTFOLIO_DATA = {
         { name: "Socket.io & WebRTC", level: 88, tag: "Advanced" },
         { name: "Monaco Editor Integration", level: 90, tag: "Advanced" },
         { name: "Chart.js & Data Viz", level: 88, tag: "Advanced" },
-        { name: "Responsive UI & 90+ Lighthouse", level: 92, tag: "Expert" }
-      ]
+        { name: "Responsive UI & 90+ Lighthouse", level: 92, tag: "Expert" },
+      ],
     },
     {
       category: "Backend & Databases",
@@ -106,20 +107,24 @@ const PORTFOLIO_DATA = {
         { name: "MySQL", level: 88, tag: "Advanced" },
         { name: "Firebase (Auth & Firestore)", level: 88, tag: "Advanced" },
         { name: "RESTful APIs & Microservices", level: 92, tag: "Expert" },
-        { name: "API Caching & Debouncing", level: 90, tag: "Advanced" }
-      ]
+        { name: "API Caching & Debouncing", level: 90, tag: "Advanced" },
+      ],
     },
     {
       category: "Tools, Platforms & Competitive",
       icon: "cloud",
       items: [
         { name: "CodeChef (3★, 1600+ Rating)", level: 94, tag: "Top 10%" },
-        { name: "Data Structures & Algorithms", level: 95, tag: "1000+ Solved" },
+        {
+          name: "Data Structures & Algorithms",
+          level: 95,
+          tag: "1000+ Solved",
+        },
         { name: "Git & GitHub", level: 90, tag: "Advanced" },
         { name: "Vercel & Render Deployment", level: 88, tag: "Advanced" },
-        { name: "Performance Optimization", level: 92, tag: "90+ Score" }
-      ]
-    }
+        { name: "Performance Optimization", level: 92, tag: "90+ Score" },
+      ],
+    },
   ],
 
   projects: [
@@ -128,102 +133,163 @@ const PORTFOLIO_DATA = {
       title: "Real-Time Interview Platform (CodeCollab)",
       category: "fullstack",
       categoryLabel: "MERN Stack • Socket.io • WebRTC",
-      tagline: "Real-time collaborative coding platform for technical interviews with synchronized editing, video conferencing, and live code execution.",
+      tagline:
+        "Real-time collaborative coding platform for technical interviews with synchronized editing, video conferencing, and live code execution.",
       image: "assets/project-1.jpg",
       featured: true,
       badge: "Featured MERN & WebRTC",
       year: "2025",
-      description: "Built a real-time collaborative coding platform for technical interviews with shared coding rooms and synchronized code editing using Monaco Editor and Socket.io. Implemented Firebase-based Google authentication with protected routes, room-based access, host/attendee roles, and shareable room links. Developed real-time chat, typing indicators, code execution, code download, copy room link, and editor controls for collaborative interview sessions. Integrated WebRTC-based video conferencing to enable live interviewer-candidate communication within coding rooms.",
+      description:
+        "Built a real-time collaborative coding platform for technical interviews with shared coding rooms and synchronized code editing using Monaco Editor and Socket.io. Implemented Firebase-based Google authentication with protected routes, room-based access, host/attendee roles, and shareable room links. Developed real-time chat, typing indicators, code execution, code download, copy room link, and editor controls for collaborative interview sessions. Integrated WebRTC-based video conferencing to enable live interviewer-candidate communication within coding rooms.",
       highlights: [
         "Built a real-time collaborative coding platform for technical interviews with shared coding rooms and synchronized code editing using Monaco Editor and Socket.io.",
         "Implemented Firebase-based Google authentication with protected routes, room-based access, host/attendee roles, and shareable room links.",
         "Developed real-time chat, typing indicators, code execution, code download, copy room link, and editor controls for collaborative interview sessions.",
-        "Integrated WebRTC-based video conferencing to enable live interviewer-candidate communication within coding rooms."
+        "Integrated WebRTC-based video conferencing to enable live interviewer-candidate communication within coding rooms.",
       ],
       metrics: [
         { label: "Sync Latency", value: "<50ms" },
         { label: "Code Editor", value: "Monaco" },
-        { label: "Media & Auth", value: "WebRTC/Firebase" }
+        { label: "Media & Auth", value: "WebRTC/Firebase" },
       ],
-      techStack: ["React.js", "Node.js", "Express.js", "Socket.io", "Monaco Editor", "Firebase", "WebRTC", "CSS3"],
-      githubUrl: "https://github.com/Prorick44/real-time-interview-prep-project",
-      liveUrl: "https://real-time-interview-prep-project.vercel.app/"
+      techStack: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Socket.io",
+        "Monaco Editor",
+        "Firebase",
+        "WebRTC",
+        "CSS3",
+      ],
+      githubUrl:
+        "https://github.com/Prorick44/real-time-interview-prep-project",
+      liveUrl: "https://real-time-interview-prep-project.vercel.app/",
     },
     {
       id: "realtime-weather-dashboard",
       title: "Real-Time Weather Dashboard",
       category: "frontend",
       categoryLabel: "React • Redux Toolkit",
-      tagline: "Dynamic weather dashboard providing live weather data for 200,000+ cities with interactive Chart.js visualizations.",
+      tagline:
+        "Dynamic weather dashboard providing live weather data for 200,000+ cities with interactive Chart.js visualizations.",
       image: "assets/project-2.jpg",
       featured: true,
       badge: "High Performance",
       year: "2024",
-      description: "Developed a dynamic live weather analytics dashboard delivering instantaneous weather updates and 7-day trend forecasts for over 200,000 cities worldwide. Implemented debouncing and caching to reduce external API overhead by 40%. Integrated Chart.js for interactive visualizations of 7-day weather forecasts.",
+      description:
+        "Developed a dynamic live weather analytics dashboard delivering instantaneous weather updates and 7-day trend forecasts for over 200,000 cities worldwide. Implemented debouncing and caching to reduce external API overhead by 40%. Integrated Chart.js for interactive visualizations of 7-day weather forecasts.",
       highlights: [
         "Developed a dynamic dashboard providing live weather data for 200,000+ cities.",
         "Implemented debouncing and caching to reduce API overhead by 40%.",
-        "Integrated Chart.js for interactive visualizations of 7-day weather forecasts."
+        "Integrated Chart.js for interactive visualizations of 7-day weather forecasts.",
       ],
       metrics: [
         { label: "Cities Covered", value: "200,000+" },
         { label: "API Overhead Cut", value: "-40%" },
-        { label: "Forecast Window", value: "7-Day Visuals" }
+        { label: "Forecast Window", value: "7-Day Visuals" },
       ],
-      techStack: ["React.js", "Redux Toolkit", "OpenWeather API", "Chart.js", "CSS3", "Vercel"],
+      techStack: [
+        "React.js",
+        "Redux Toolkit",
+        "OpenWeather API",
+        "Chart.js",
+        "CSS3",
+        "Vercel",
+      ],
       githubUrl: "https://github.com/Prorick44/weather-app",
-      liveUrl: "https://weather-app-beige-ten-65.vercel.app/"
+      liveUrl: "https://weather-app-beige-ten-65.vercel.app/",
     },
     {
       id: "algorithmic-code-vault",
       title: "1000+ Algorithmic Problem Solving & Competitive Vault",
       category: "dsa",
       categoryLabel: "Competitive Programming",
-      tagline: "High-performance C++ & Java solutions repository across CodeChef (3★, 1600+), ranked in top 10% in 20+ contests.",
+      tagline:
+        "High-performance C++ & Java solutions repository across CodeChef (3★, 1600+), ranked in top 10% in 20+ contests.",
       image: "assets/project-3.jpg",
       featured: true,
       badge: "CodeChef 3★",
       year: "2023 – Present",
-      description: "Curated repository of 1,000+ optimized algorithmic solutions in C++, Java, and Python. Ranked in the top 10% of participants across various CodeChef rated contests with a peak 3-star rating (1600+) across 20+ contests.",
+      description:
+        "Curated repository of 1,000+ optimized algorithmic solutions in C++, Java, and Python. Ranked in the top 10% of participants across various CodeChef rated contests with a peak 3-star rating (1600+) across 20+ contests.",
       highlights: [
         "Solved 1,000+ competitive programming problems spanning Dynamic Programming, Graph Algorithms, Trees, and Number Theory.",
         "Attained CodeChef 3-Star rating (1600+), regularly ranking in the top 10% of participants in various contests.",
-        "Engineered reusable template libraries in C++ with custom fast I/O for optimal competitive execution."
+        "Engineered reusable template libraries in C++ with custom fast I/O for optimal competitive execution.",
       ],
       metrics: [
         { label: "Problems Solved", value: "1000+" },
         { label: "CodeChef Rating", value: "1600+ (3★)" },
-        { label: "Contests", value: "20+ Contests" }
+        { label: "Contests", value: "20+ Contests" },
       ],
       techStack: ["C++", "Java", "Python", "DSA", "CodeChef", "Git"],
       githubUrl: "https://github.com/Prorick44",
-      liveUrl: "https://www.codechef.com/users/projjal2002"
+      liveUrl: "https://www.codechef.com/users/projjal2002",
     },
     {
       id: "fullstack-projects-suite",
       title: "Full Stack Web Development & RESTful APIs",
       category: "fullstack",
       categoryLabel: "MERN Stack • APIs",
-      tagline: "Suite of 5+ responsive web applications achieving 90+ Lighthouse scores, RESTful APIs, and Redux Toolkit state management.",
+      tagline:
+        "Suite of 5+ responsive web applications achieving 90+ Lighthouse scores, RESTful APIs, and Redux Toolkit state management.",
       image: "assets/project-4.jpg",
       featured: true,
       badge: "90+ Lighthouse",
       year: "2023 – Present",
-      description: "Developed and maintained 5+ personal projects focusing on responsive design, RESTful APIs, centralized state management with Redux Toolkit, and performance tuning achieving 90+ Google Lighthouse scores.",
+      description:
+        "Developed and maintained 5+ personal projects focusing on responsive design, RESTful APIs, centralized state management with Redux Toolkit, and performance tuning achieving 90+ Google Lighthouse scores.",
       highlights: [
         "Developed and maintained 5+ personal projects focusing on responsive design and RESTful APIs.",
         "Gained expertise in state management using Redux Toolkit for complex application data flows.",
-        "Achieved 90+ Lighthouse performance scores through code-splitting and asset optimization."
+        "Achieved 90+ Lighthouse performance scores through code-splitting and asset optimization.",
       ],
       metrics: [
         { label: "Lighthouse Score", value: "90+" },
         { label: "Projects Shipped", value: "5+ Apps" },
-        { label: "Deployment", value: "Render & Vercel" }
+        { label: "Deployment", value: "Render & Vercel" },
       ],
-      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "MySQL", "Redux Toolkit", "Render", "Vercel"],
+      techStack: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MySQL",
+        "Redux Toolkit",
+        "Render",
+        "Vercel",
+      ],
       githubUrl: "https://github.com/Prorick44",
-      liveUrl: "https://github.com/Prorick44"
-    }
+      liveUrl: "https://github.com/Prorick44",
+    },
+    {
+      id: "note-app",
+      title: "Note App",
+      category: "frontend",
+      categoryLabel: "React • Notes • Productivity",
+      tagline:
+        "Clean note-taking web app for creating, organizing, and managing personal notes with a lightweight user experience.",
+      image: "assets/project-2.jpg",
+      featured: false,
+      badge: "Productivity App",
+      year: "2024",
+      description:
+        "Built a modern note-taking web application with a clean interface for creating, editing, and deleting notes. Focused on simplicity, responsive layout, and smooth interactions to make everyday personal organization easier and faster.",
+      highlights: [
+        "Designed a simple and responsive notes interface for quick daily usage.",
+        "Included structured note creation, editing, and removal flows for a clean workflow.",
+        "Focused on lightweight UX, readability, and fast interactions for repeated use.",
+      ],
+      metrics: [
+        { label: "Use Case", value: "Notes" },
+        { label: "Experience", value: "Fast UX" },
+        { label: "Deployment", value: "Vercel" },
+      ],
+      techStack: ["React.js", "JavaScript", "CSS3", "Vercel"],
+      githubUrl: "https://github.com/Prorick44",
+      liveUrl: "https://vercel.com/projjal2002-9212s-projects/note-app",
+    },
   ],
 
   experience: [
@@ -232,15 +298,29 @@ const PORTFOLIO_DATA = {
       company: "Personal Projects & Open Source",
       period: "2023 – Present",
       location: "West Bengal, India",
-      description: "Developed and maintained 5+ personal projects focusing on responsive design, RESTful APIs, centralized Redux Toolkit state management, and asset optimization.",
+      description:
+        "Developed and maintained 5+ personal projects focusing on responsive design, RESTful APIs, centralized Redux Toolkit state management, and asset optimization.",
       achievements: [
         "Developed and maintained 5+ personal projects focusing on responsive design and RESTful APIs.",
         "Gained expertise in state management using Redux Toolkit for complex application flows.",
         "Achieved 90+ Lighthouse performance scores through code-splitting and asset optimization.",
-        "Technical Mentor: Assisted junior students in understanding core DSA concepts and React fundamentals."
+        "Technical Mentor: Assisted junior students in understanding core DSA concepts and React fundamentals.",
       ],
-      skills: ["React.js", "Node.js", "Express.js", "MongoDB", "MySQL", "Redux Toolkit", "Socket.io", "WebRTC", "C++", "DSA", "Vercel", "Render"]
-    }
+      skills: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MySQL",
+        "Redux Toolkit",
+        "Socket.io",
+        "WebRTC",
+        "C++",
+        "DSA",
+        "Vercel",
+        "Render",
+      ],
+    },
   ],
 
   education: [
@@ -250,7 +330,8 @@ const PORTFOLIO_DATA = {
       period: "2021 – 2025",
       score: "CGPA: 8.58",
       location: "Kolkata, West Bengal",
-      details: "Focused on Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, and Web Application Architecture."
+      details:
+        "Focused on Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, and Web Application Architecture.",
     },
     {
       degree: "Higher Secondary (CBSE)",
@@ -258,7 +339,8 @@ const PORTFOLIO_DATA = {
       period: "2021",
       score: "Percentage: 91.20%",
       location: "India",
-      details: "Completed CBSE Class XII Science stream with distinction in Mathematics and Computer Science."
+      details:
+        "Completed CBSE Class XII Science stream with distinction in Mathematics and Computer Science.",
     },
     {
       degree: "Secondary Education (WBBSE)",
@@ -266,27 +348,28 @@ const PORTFOLIO_DATA = {
       period: "2019",
       score: "Percentage: 91.14%",
       location: "West Bengal, India",
-      details: "Completed Secondary School Board examinations with distinction in Mathematics and Physical Sciences."
-    }
+      details:
+        "Completed Secondary School Board examinations with distinction in Mathematics and Physical Sciences.",
+    },
   ],
 
   achievements: [
     {
       title: "Competitive Programming",
-      desc: "Ranked in the top 10% of participants in various CodeChef contests. CodeChef 3-Star (1600+ rating) with 1,000+ problems solved across 20+ contests."
+      desc: "Ranked in the top 10% of participants in various CodeChef contests. CodeChef 3-Star (1600+ rating) with 1,000+ problems solved across 20+ contests.",
     },
     {
       title: "Academic Excellence",
-      desc: "Consistently maintained a high CGPA (8.58) in B.Tech Computer Science while balancing technical projects."
+      desc: "Consistently maintained a high CGPA (8.58) in B.Tech Computer Science while balancing technical projects.",
     },
     {
       title: "Technical Mentor",
-      desc: "Assisted junior students in understanding core DSA concepts and React fundamentals."
+      desc: "Assisted junior students in understanding core DSA concepts and React fundamentals.",
     },
     {
       title: "Community",
-      desc: "Active contributor to open source discussions and developer forums."
-    }
+      desc: "Active contributor to open source discussions and developer forums.",
+    },
   ],
 
   terminalResponses: {
@@ -378,6 +461,6 @@ Location: West Bengal, India | Open for Full-Time Opportunities.`,
 - B.Tech CGPA            : 8.58 (Computer Science)
 - Class 12 (CBSE)        : 91.20%
 - Class 10 (WBBSE)       : 91.14%
-- Personal Web Projects  : 5+ Full-Stack Projects (90+ Lighthouse Score)`
-  }
+- Personal Web Projects  : 5+ Full-Stack Projects (90+ Lighthouse Score)`,
+  },
 };

@@ -13,30 +13,86 @@
     greetings: [
       "Hello! I am **Projjal's AI Assistant**. How can I help you explore his portfolio, skills, projects, or background today? ⚡",
       "Hi there! Welcome to Projjal Paul's portfolio. Ask me anything about his full-stack projects, competitive programming stats, or how to get in touch! 🚀",
-      "Greetings! Looking for information about Projjal's technical stack, CodeCollab project, or education? I'm here to assist! 💻"
+      "Greetings! Looking for information about Projjal's technical stack, CodeCollab project, or education? I'm here to assist! 💻",
     ],
+
+    profileFacts: {
+      name: "Projjal Paul",
+      role: "Software Engineer | Full Stack Developer",
+      location: "West Bengal, India",
+      cgpa: "8.58",
+      codechefRating: "3★ (1600+)",
+      problemsSolved: "1000+",
+      openToWork: true,
+      primaryStack: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MySQL",
+        "Redux Toolkit",
+        "Socket.io",
+        "WebRTC",
+        "C++",
+        "Java",
+        "Python",
+      ],
+      highlights: [
+        "Built a real-time interview platform with Monaco Editor and WebRTC.",
+        "Created a weather dashboard with 200,000+ city coverage and API optimization.",
+        "Solved 1000+ algorithmic problems and earned CodeChef 3★.",
+        "Built 8+ full-stack projects with strong frontend and backend skills.",
+      ],
+    },
 
     intents: [
       {
         id: "codecollab",
-        keywords: ["codecollab", "interview", "monaco", "webrtc", "socket.io", "socket", "collaborative", "collaboration", "realtime coding", "real-time coding", "coding room", "firebase auth", "video call"],
+        keywords: [
+          "codecollab",
+          "interview platform",
+          "interview",
+          "monaco",
+          "webrtc",
+          "socket.io",
+          "socket",
+          "collaborative coding",
+          "coding room",
+          "firebase auth",
+          "video call",
+          "technical interview",
+          "remote interview",
+        ],
         response: `**Real-Time Interview Platform (CodeCollab)** *(2025)*:
 • **Overview**: A full-stack real-time collaborative coding platform designed for technical interviews.
 • **Key Features**:
   - Synchronized coding rooms with **Monaco Editor** & **Socket.io** (<50ms latency).
   - Integrated **WebRTC video conferencing** for live interviewer-candidate communication.
-  - **Firebase Google Authentication** with role-based access (host vs candidate) and shareable room links.
+  - **Firebase Google Authentication** with role-based access and shareable room links.
   - In-room live chat, typing indicators, code execution, and code download.
 • **Tech Stack**: \`React.js\`, \`Node.js\`, \`Express.js\`, \`Socket.io\`, \`Monaco Editor\`, \`Firebase\`, \`WebRTC\`
 • **Code & Demo**: Available on [GitHub (Prorick44)](https://github.com/Prorick44).`,
         actions: [
-          { label: "Open Case Study", action: "openModal:codecollab-interview-platform" },
-          { label: "View GitHub Repo", url: "https://github.com/Prorick44" }
-        ]
+          {
+            label: "Open Case Study",
+            action: "openModal:codecollab-interview-platform",
+          },
+          { label: "View GitHub Repo", url: "https://github.com/Prorick44" },
+        ],
       },
       {
         id: "weather",
-        keywords: ["weather", "dashboard", "openweather", "chart.js", "caching", "debounc", "forecast", "cities"],
+        keywords: [
+          "weather",
+          "dashboard",
+          "openweather",
+          "chart.js",
+          "caching",
+          "debounc",
+          "forecast",
+          "cities",
+          "weather app",
+        ],
         response: `**Real-Time Weather Dashboard** *(2024)*:
 • **Overview**: A high-performance dynamic weather analytics dashboard delivering live weather data for **200,000+ cities**.
 • **Highlights**:
@@ -45,37 +101,86 @@
   - Responsive, modern UI with 90+ Lighthouse score.
 • **Tech Stack**: \`React.js\`, \`Redux Toolkit\`, \`OpenWeather API\`, \`Chart.js\`, \`CSS3\`, \`Vercel\`.`,
         actions: [
-          { label: "View Case Study", action: "openModal:realtime-weather-dashboard" }
-        ]
+          {
+            label: "View Case Study",
+            action: "openModal:realtime-weather-dashboard",
+          },
+        ],
       },
       {
         id: "projects",
-        keywords: ["project", "projects", "portfolio", "built", "work", "apps", "application", "mern"],
+        keywords: [
+          "project",
+          "projects",
+          "portfolio",
+          "work",
+          "apps",
+          "application",
+          "mern",
+          "built",
+          "what have you built",
+        ],
         response: `Here are Projjal's top featured projects:
-1. **Real-Time Interview Platform (CodeCollab)** *(2025)*: Collaborative code editor with Monaco Editor, Socket.io, Firebase Auth, and WebRTC video conferencing.
+1. **Real-Time Interview Platform (CodeCollab)** *(2025)*: Collaborative coding editor with Monaco Editor, Socket.io, Firebase Auth, and WebRTC video conferencing.
 2. **Real-Time Weather Dashboard** *(2024)*: Live metrics for 200,000+ cities with 40% API reduction via caching/debouncing and Chart.js forecasts.
-3. **1000+ Algorithmic Problem Solving & Code Vault**: Repository of 1,000+ C++/Java solutions with CodeChef 3★ rating.
-4. **Full-Stack Web Development Suite**: 5+ personal projects built with React, Node.js, Express, MongoDB, MySQL, and Redux Toolkit.`,
+3. **TaskFlow Pro** *(2024)*: Collaborative productivity dashboard and team workflow manager.
+4. **InsightBoard Analytics** *(2024)*: KPI dashboard with smart filters and visual analytics.
+5. **1000+ Algorithmic Problem Solving & Code Vault**: Repository of 1,000+ C++/Java solutions with CodeChef 3★ rating.`,
         actions: [
-          { label: "Explore CodeCollab", action: "openModal:codecollab-interview-platform" },
-          { label: "Scroll to Projects", action: "scrollTo:#projects" }
-        ]
+          { label: "Explore Project Gallery", action: "scrollTo:#projects" },
+          {
+            label: "Open CodeCollab",
+            action: "openModal:codecollab-interview-platform",
+          },
+        ],
       },
       {
         id: "skills",
-        keywords: ["skill", "skills", "stack", "tech", "technology", "technologies", "languages", "programming", "tools", "c++", "java", "python", "react", "node", "mongodb", "redux", "sql"],
+        keywords: [
+          "skill",
+          "skills",
+          "stack",
+          "tech",
+          "technology",
+          "technologies",
+          "languages",
+          "programming",
+          "tools",
+          "c++",
+          "java",
+          "python",
+          "react",
+          "node",
+          "mongodb",
+          "redux",
+          "sql",
+          "what do you know",
+          "what is your stack",
+        ],
         response: `Here is Projjal's core technical ecosystem:
 • **Programming Languages**: C, C++ (STL & DSA), Java, Python, JavaScript (ES6+), SQL, HTML5, CSS3.
 • **Frontend & Real-Time**: React.js, Redux Toolkit, Socket.io, WebRTC, Monaco Editor, Chart.js, Responsive UI (90+ Lighthouse).
 • **Backend & Databases**: Node.js, Express.js, MongoDB, Mongoose, MySQL, Firebase, RESTful APIs.
 • **Tools & Platforms**: Git, GitHub, Vercel, Render, Postman, CodeChef.`,
-        actions: [
-          { label: "View Skills Section", action: "scrollTo:#skills" }
-        ]
+        actions: [{ label: "View Skills Section", action: "scrollTo:#skills" }],
       },
       {
         id: "education",
-        keywords: ["education", "college", "degree", "cgpa", "b.tech", "btech", "school", "marks", "percentage", "university", "institute", "future institute"],
+        keywords: [
+          "education",
+          "college",
+          "degree",
+          "cgpa",
+          "b.tech",
+          "btech",
+          "school",
+          "marks",
+          "percentage",
+          "university",
+          "institute",
+          "future institute",
+          "graduation",
+        ],
         response: `**Academic Qualifications**:
 1. **B.Tech in Computer Science** (2021 – 2025)
    • **Institution**: Future Institute of Engineering and Management
@@ -88,37 +193,78 @@
    • **Institution**: Patha Bhavan (Dankuni)
    • **Score**: **Percentage: 91.14%**`,
         actions: [
-          { label: "View Education Details", action: "scrollTo:#experience" }
-        ]
+          { label: "View Education Details", action: "scrollTo:#experience" },
+        ],
       },
       {
         id: "competitive",
-        keywords: ["codechef", "dsa", "leetcode", "competitive", "contest", "contests", "rating", "rank", "ranking", "problems", "algorithms", "data structures"],
+        keywords: [
+          "codechef",
+          "dsa",
+          "leetcode",
+          "competitive",
+          "contest",
+          "contests",
+          "rating",
+          "rank",
+          "ranking",
+          "problems",
+          "algorithms",
+          "data structures",
+          "cp",
+        ],
         response: `**Competitive Programming Milestones**:
 • **CodeChef Rating**: **3-Star (1600+ Rating)**
 • **Contests**: Participated in **20+ rated contests** with consistent **top 10% finishes**.
 • **Problems Solved**: Over **1,000+ algorithmic coding problems** solved across platforms in C++, Java, and Python.
 • **Core Strengths**: Dynamic Programming, Graph Algorithms, Trees, Bit Manipulation, and custom fast I/O optimization.`,
         actions: [
-          { label: "Visit CodeChef Profile", url: "https://www.codechef.com/users/projjal2002" }
-        ]
+          {
+            label: "Visit CodeChef Profile",
+            url: "https://www.codechef.com/users/projjal2002",
+          },
+        ],
       },
       {
         id: "experience",
-        keywords: ["experience", "background", "journey", "work", "mentor", "mentorship", "leadership"],
+        keywords: [
+          "experience",
+          "background",
+          "journey",
+          "work",
+          "mentor",
+          "mentorship",
+          "leadership",
+          "what did you do",
+          "career",
+        ],
         response: `**Technical Experience & Leadership**:
 • **Full Stack Web Development** (2023 – Present):
-  - Built & maintained 5+ full-stack web applications using MERN stack with RESTful APIs.
+  - Built & maintained 8+ full-stack web applications using MERN stack with RESTful APIs.
   - Implemented centralized Redux Toolkit state management and achieved 90+ Lighthouse performance scores.
 • **Technical Mentor**: Assisted junior students in understanding core DSA concepts and React fundamentals.
 • **Community**: Active contributor to open source discussions and developer forums.`,
-        actions: [
-          { label: "View Experience", action: "scrollTo:#experience" }
-        ]
+        actions: [{ label: "View Experience", action: "scrollTo:#experience" }],
       },
       {
         id: "contact",
-        keywords: ["contact", "email", "phone", "call", "reach", "message", "hire", "hiring", "job", "opportunity", "location", "linkedin", "github"],
+        keywords: [
+          "contact",
+          "email",
+          "phone",
+          "call",
+          "reach",
+          "message",
+          "hire",
+          "hiring",
+          "job",
+          "opportunity",
+          "location",
+          "linkedin",
+          "github",
+          "available",
+          "open to work",
+        ],
         response: `**Get in Touch with Projjal Paul**:
 • **Email**: [projjal2003@gmail.com](mailto:projjal2003@gmail.com)
 • **Phone**: [+91-9073481347](tel:+919073481347)
@@ -127,29 +273,42 @@
 • **Location**: West Bengal, India (Open to Remote & Onsite roles)`,
         actions: [
           { label: "Send Message Now", action: "scrollTo:#contact" },
-          { label: "View Resume / CV", action: "openResumeModal" }
-        ]
+          { label: "View Resume / CV", action: "openResumeModal" },
+        ],
       },
       {
         id: "resume",
-        keywords: ["resume", "cv", "pdf", "download", "summary", "objective"],
+        keywords: [
+          "resume",
+          "cv",
+          "pdf",
+          "download",
+          "summary",
+          "objective",
+          "bio",
+        ],
         response: `**Career Objective & Summary**:
 "Result-oriented Software Engineer with a B.Tech in Computer Science (8.58 CGPA) and strong problem-solving skills. Proven ability to build full stack web applications using the MERN stack with 1000+ DSA problems solved and CodeChef 3★ rating."
 
 You can view the full printable CV directly through the portfolio!`,
-        actions: [
-          { label: "Open Resume Viewer", action: "openResumeModal" }
-        ]
+        actions: [{ label: "Open Resume Viewer", action: "openResumeModal" }],
       },
       {
         id: "about",
-        keywords: ["who are you", "who is projjal", "about", "bio", "intro", "introduction"],
+        keywords: [
+          "who are you",
+          "who is projjal",
+          "about",
+          "intro",
+          "introduction",
+          "tell me about projjal",
+        ],
         response: `**Projjal Paul** is a Software Engineer and Full Stack Developer based in West Bengal, India. He holds a B.Tech in Computer Science (8.58 CGPA) and specializes in building high-performance MERN web apps, real-time collaboration tools (like CodeCollab), and solving complex algorithmic challenges (CodeChef 3★, 1000+ problems solved).`,
         actions: [
           { label: "Explore Projects", action: "scrollTo:#projects" },
-          { label: "View Resume", action: "openResumeModal" }
-        ]
-      }
+          { label: "View Resume", action: "openResumeModal" },
+        ],
+      },
     ],
 
     defaultFallback: `I'm not sure about that specific detail, but I can tell you all about Projjal's:
@@ -159,7 +318,12 @@ You can view the full printable CV directly through the portfolio!`,
 • **Competitive Programming** (CodeChef 3★, 1000+ solved)
 • **Contact & Hiring**
 
-Try clicking one of the suggested topics below! 👇`
+Try clicking one of the suggested topics below! 👇`,
+  };
+
+  const conversationState = {
+    lastTopic: null,
+    lastPrompt: "",
   };
 
   // Chatbot UI Component Injection & Logic
@@ -169,11 +333,11 @@ Try clicking one of the suggested topics below! 👇`
   }
 
   function createChatbotMarkup() {
-    if (document.getElementById('ai-chatbot-widget')) return;
+    if (document.getElementById("ai-chatbot-widget")) return;
 
-    const widget = document.createElement('div');
-    widget.id = 'ai-chatbot-widget';
-    widget.className = 'ai-chatbot-container';
+    const widget = document.createElement("div");
+    widget.id = "ai-chatbot-widget";
+    widget.className = "ai-chatbot-container";
 
     widget.innerHTML = `
       <!-- Chat Launcher Floating Bubble -->
@@ -264,25 +428,25 @@ Try clicking one of the suggested topics below! 👇`
   }
 
   function bindChatbotEvents() {
-    const toggleBtn = document.getElementById('chatbot-toggle-btn');
-    const closeBtn = document.getElementById('chatbot-close-btn');
-    const clearBtn = document.getElementById('chatbot-clear-btn');
-    const windowEl = document.getElementById('chatbot-window');
-    const form = document.getElementById('chatbot-form');
-    const input = document.getElementById('chatbot-input');
-    const chipsBar = document.getElementById('chatbot-chips-bar');
-    const messages = document.getElementById('chatbot-messages');
+    const toggleBtn = document.getElementById("chatbot-toggle-btn");
+    const closeBtn = document.getElementById("chatbot-close-btn");
+    const clearBtn = document.getElementById("chatbot-clear-btn");
+    const windowEl = document.getElementById("chatbot-window");
+    const form = document.getElementById("chatbot-form");
+    const input = document.getElementById("chatbot-input");
+    const chipsBar = document.getElementById("chatbot-chips-bar");
+    const messages = document.getElementById("chatbot-messages");
 
     if (!toggleBtn || !windowEl || !form || !input) return;
 
     // Toggle Chatbot
-    toggleBtn.addEventListener('click', () => {
-      const isOpen = windowEl.classList.toggle('active');
-      toggleBtn.classList.toggle('open', isOpen);
-      
+    toggleBtn.addEventListener("click", () => {
+      const isOpen = windowEl.classList.toggle("active");
+      toggleBtn.classList.toggle("open", isOpen);
+
       // Clear unread badge
-      const badge = toggleBtn.querySelector('.chatbot-badge-unread');
-      if (badge) badge.style.display = 'none';
+      const badge = toggleBtn.querySelector(".chatbot-badge-unread");
+      if (badge) badge.style.display = "none";
 
       if (isOpen) {
         setTimeout(() => input.focus(), 300);
@@ -291,13 +455,13 @@ Try clicking one of the suggested topics below! 👇`
     });
 
     // Close button
-    closeBtn.addEventListener('click', () => {
-      windowEl.classList.remove('active');
-      toggleBtn.classList.remove('open');
+    closeBtn.addEventListener("click", () => {
+      windowEl.classList.remove("active");
+      toggleBtn.classList.remove("open");
     });
 
     // Clear chat
-    clearBtn.addEventListener('click', () => {
+    clearBtn.addEventListener("click", () => {
       messages.innerHTML = `
         <div class="chat-msg bot-msg">
           <div class="msg-bubble">
@@ -309,20 +473,20 @@ Try clicking one of the suggested topics below! 👇`
     });
 
     // Handle Form Submit
-    form.addEventListener('submit', (e) => {
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
       const q = input.value.trim();
       if (!q) return;
 
-      input.value = '';
+      input.value = "";
       handleUserQuery(q);
     });
 
     // Handle Quick Chips
-    chipsBar.addEventListener('click', (e) => {
-      const chip = e.target.closest('.bot-chip');
+    chipsBar.addEventListener("click", (e) => {
+      const chip = e.target.closest(".bot-chip");
       if (chip) {
-        const query = chip.getAttribute('data-query');
+        const query = chip.getAttribute("data-query");
         if (query) {
           handleUserQuery(query);
         }
@@ -330,103 +494,291 @@ Try clicking one of the suggested topics below! 👇`
     });
   }
 
-  function handleUserQuery(userText) {
-    appendMessage(userText, 'user');
-
-    // Show Typing Indicator
-    showTypingIndicator();
-
-    setTimeout(() => {
-      removeTypingIndicator();
-      const result = processQuery(userText);
-      appendMessage(result.text, 'bot', result.actions);
-    }, 600);
+  function normalizeText(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
   }
 
-  function processQuery(rawText) {
-    const text = rawText.toLowerCase();
-
-    // Check Greetings
-    if (/^(hi|hello|hey|greetings|hola|namaste|sup|yo)\b/i.test(text.trim())) {
-      const greeting = BOT_KNOWLEDGE.greetings[Math.floor(Math.random() * BOT_KNOWLEDGE.greetings.length)];
-      return {
-        text: greeting,
-        actions: [
-          { label: "CodeCollab Project", action: "openModal:codecollab-interview-platform" },
-          { label: "View Tech Stack", action: "scrollTo:#skills" }
-        ]
-      };
-    }
-
-    // Check Thanks
-    if (/thank|thanks|great|awesome|cool|good job|nice/i.test(text)) {
-      return {
-        text: "You're very welcome! Feel free to reach out to Projjal directly or explore his projects. ⚡",
-        actions: [
-          { label: "Contact Projjal", action: "scrollTo:#contact" },
-          { label: "View Resume", action: "openResumeModal" }
-        ]
-      };
-    }
-
-    // Match Intents with Keyword Scoring
+  function getWeightedIntentMatch(text) {
     let bestMatch = null;
     let highestScore = 0;
 
     for (const intent of BOT_KNOWLEDGE.intents) {
       let score = 0;
       for (const kw of intent.keywords) {
-        if (text.includes(kw)) {
-          score += kw.length; // weight longer keyword matches higher
+        const normKw = normalizeText(kw);
+        if (!normKw) continue;
+
+        if (text.includes(normKw)) {
+          score += normKw.length * 3;
+          if (normKw.split(" ").length > 1) score += 10;
         }
       }
+
+      if (
+        /(tell me more|more about|details|expand|explain)/.test(text) &&
+        conversationState.lastTopic === intent.id
+      ) {
+        score += 25;
+      }
+
       if (score > highestScore) {
         highestScore = score;
         bestMatch = intent;
       }
     }
 
-    if (bestMatch && highestScore > 0) {
+    return bestMatch && highestScore > 0
+      ? { intent: bestMatch, score: highestScore }
+      : null;
+  }
+
+  function buildProjectRecommendation(text) {
+    const projectHints = {
+      codecollab:
+        "If you need a real-time collaborative coding platform for interviews, CodeCollab is the strongest match.",
+      weather:
+        "If you need a polished frontend dashboard with live data and analytics, the Weather Dashboard is a great choice.",
+      fullstack:
+        "If you need a full-stack product with APIs, dashboards, and polished UX, TaskFlow Pro or the full-stack suite is a strong option.",
+    };
+
+    if (
+      /(interview|codecollab|monaco|webrtc|technical interview|hackathon)/.test(
+        text,
+      )
+    ) {
       return {
-        text: bestMatch.response,
-        actions: bestMatch.actions || []
+        text:
+          projectHints.codecollab +
+          " It combines Monaco, WebRTC, Firebase auth, and real-time collaboration.",
+        actions: [
+          {
+            label: "Open CodeCollab",
+            action: "openModal:codecollab-interview-platform",
+          },
+        ],
       };
     }
 
-    // Fallback
+    if (/(weather|dashboard|analytics|chart|forecast)/.test(text)) {
+      return {
+        text:
+          projectHints.weather +
+          " It focuses on live data, smart caching, and visual forecasting.",
+        actions: [
+          {
+            label: "Open Weather Dashboard",
+            action: "openModal:realtime-weather-dashboard",
+          },
+        ],
+      };
+    }
+
     return {
-      text: BOT_KNOWLEDGE.defaultFallback,
+      text: "For a broad portfolio view, I’d recommend starting with CodeCollab for real-time engineering depth, and the Weather Dashboard for frontend performance and UX polish.",
       actions: [
-        { label: "CodeCollab", action: "openModal:codecollab-interview-platform" },
-        { label: "Skills", action: "scrollTo:#skills" },
-        { label: "Education (8.58)", action: "scrollTo:#experience" },
-        { label: "Contact", action: "scrollTo:#contact" }
-      ]
+        {
+          label: "Open CodeCollab",
+          action: "openModal:codecollab-interview-platform",
+        },
+        {
+          label: "Open Weather Dashboard",
+          action: "openModal:realtime-weather-dashboard",
+        },
+      ],
     };
   }
 
+  function compareProjects(text) {
+    if (
+      /(codecollab|interview)/.test(text) &&
+      /(weather|dashboard)/.test(text)
+    ) {
+      return {
+        text: "**CodeCollab vs Weather Dashboard**:\n• **CodeCollab** is best for real-time collaboration, WebRTC, and backend/frontend real-time systems.\n• **Weather Dashboard** is best for performance-focused frontend work, data visualization, and API optimization.\nIf you want to see the more complex architecture, open CodeCollab; for UI/data visualization, open the Weather Dashboard.",
+        actions: [
+          {
+            label: "Open CodeCollab",
+            action: "openModal:codecollab-interview-platform",
+          },
+          {
+            label: "Open Weather Dashboard",
+            action: "openModal:realtime-weather-dashboard",
+          },
+        ],
+      };
+    }
+
+    return {
+      text: "I can compare projects like CodeCollab, Weather Dashboard, TaskFlow Pro, and InsightBoard Analytics based on backend complexity, UI polish, and real-time features.",
+      actions: [{ label: "Explore Projects", action: "scrollTo:#projects" }],
+    };
+  }
+
+  function handleUserQuery(userText) {
+    appendMessage(userText, "user");
+    conversationState.lastPrompt = normalizeText(userText);
+
+    showTypingIndicator();
+
+    setTimeout(() => {
+      removeTypingIndicator();
+      const result = processQuery(userText);
+      appendMessage(result.text, "bot", result.actions);
+    }, 600);
+  }
+
+  function processQuery(rawText) {
+    const text = normalizeText(rawText);
+
+    if (!text) {
+      return {
+        text: "I can help with projects, skills, education, DSA, or contact details. What would you like to know?",
+        actions: [{ label: "See Projects", action: "scrollTo:#projects" }],
+      };
+    }
+
+    if (
+      /^(hi|hello|hey|greetings|hola|namaste|sup|yo|good morning|good evening)/.test(
+        text.trim(),
+      )
+    ) {
+      const greeting =
+        BOT_KNOWLEDGE.greetings[
+          Math.floor(Math.random() * BOT_KNOWLEDGE.greetings.length)
+        ];
+      return {
+        text: greeting,
+        actions: [
+          {
+            label: "CodeCollab Project",
+            action: "openModal:codecollab-interview-platform",
+          },
+          { label: "View Tech Stack", action: "scrollTo:#skills" },
+        ],
+      };
+    }
+
+    if (/thank|thanks|great|awesome|cool|good job|nice/.test(text)) {
+      return {
+        text: "You're very welcome! Feel free to reach out to Projjal directly or explore his projects. ⚡",
+        actions: [
+          { label: "Contact Projjal", action: "scrollTo:#contact" },
+          { label: "View Resume", action: "openResumeModal" },
+        ],
+      };
+    }
+
+    if (
+      /(what can you do|help me|how can you help|who are you|what are you)/.test(
+        text,
+      )
+    ) {
+      return {
+        text: "I can answer questions about Projjal's profile, projects, skills, CGPA, CodeChef, work style, and hiring availability. I can also open project case studies or jump to relevant sections on the portfolio.",
+        actions: [
+          { label: "Open Projects", action: "scrollTo:#projects" },
+          { label: "Open Skills", action: "scrollTo:#skills" },
+          { label: "Contact Info", action: "scrollTo:#contact" },
+        ],
+      };
+    }
+
+    if (
+      /(recommend|suggest|best project|which project|good project|project should i check|hire for|choose)/.test(
+        text,
+      )
+    ) {
+      const recommendation = buildProjectRecommendation(text);
+      return recommendation;
+    }
+
+    if (/(compare|difference|versus|vs|which is better)/.test(text)) {
+      return compareProjects(text);
+    }
+
+    if (
+      /(tell me more|more about|explain|expand)/.test(text) &&
+      conversationState.lastTopic
+    ) {
+      const lastIntent = BOT_KNOWLEDGE.intents.find(
+        (intent) => intent.id === conversationState.lastTopic,
+      );
+      if (lastIntent) {
+        return {
+          text: `${lastIntent.response}\n\nHere is the deeper context: Projjal focuses on building production-ready UI and backend systems with strong performance, clean architecture, and practical product thinking.`,
+          actions: lastIntent.actions || [],
+        };
+      }
+    }
+
+    const intentMatch = getWeightedIntentMatch(text);
+    if (intentMatch) {
+      conversationState.lastTopic = intentMatch.intent.id;
+      return {
+        text: intentMatch.intent.response,
+        actions: intentMatch.intent.actions || [],
+      };
+    }
+
+    if (/(open to work|available|hiring|hire|remote|onsite|job)/.test(text)) {
+      return {
+        text: "Projjal is open to software engineering and full-stack developer opportunities, especially roles involving React, Node.js, backend APIs, or product-focused engineering work.",
+        actions: [
+          { label: "Contact Projjal", action: "scrollTo:#contact" },
+          { label: "View Resume", action: "openResumeModal" },
+        ],
+      };
+    }
+
+    return {
+      text: BOT_KNOWLEDGE.defaultFallback,
+      actions: [
+        {
+          label: "CodeCollab",
+          action: "openModal:codecollab-interview-platform",
+        },
+        { label: "Skills", action: "scrollTo:#skills" },
+        { label: "Education (8.58)", action: "scrollTo:#experience" },
+        { label: "Contact", action: "scrollTo:#contact" },
+      ],
+    };
+  }
+
+  window.__projjalChatbot = {
+    processQuery,
+    handleUserQuery,
+    executeBotAction,
+    state: conversationState,
+  };
   function appendMessage(content, sender, actions = []) {
-    const container = document.getElementById('chatbot-messages');
+    const container = document.getElementById("chatbot-messages");
     if (!container) return;
 
-    const msgEl = document.createElement('div');
+    const msgEl = document.createElement("div");
     msgEl.className = `chat-msg ${sender}-msg`;
 
     // Format markdown-style bold, bullet points, links
     const formattedContent = formatBotMarkdown(content);
 
-    let actionButtonsHtml = '';
+    let actionButtonsHtml = "";
     if (actions && actions.length > 0) {
       actionButtonsHtml = `
         <div class="msg-actions-wrap">
-          ${actions.map(act => {
-            if (act.url) {
-              return `<a href="${act.url}" target="_blank" rel="noopener" class="msg-action-btn">🔗 ${act.label}</a>`;
-            } else if (act.action) {
-              return `<button class="msg-action-btn" data-action="${act.action}">⚡ ${act.label}</button>`;
-            }
-            return '';
-          }).join('')}
+          ${actions
+            .map((act) => {
+              if (act.url) {
+                return `<a href="${act.url}" target="_blank" rel="noopener" class="msg-action-btn">🔗 ${act.label}</a>`;
+              } else if (act.action) {
+                return `<button class="msg-action-btn" data-action="${act.action}">⚡ ${act.label}</button>`;
+              }
+              return "";
+            })
+            .join("")}
         </div>
       `;
     }
@@ -441,9 +793,9 @@ Try clicking one of the suggested topics below! 👇`
     container.appendChild(msgEl);
 
     // Bind action buttons
-    msgEl.querySelectorAll('.msg-action-btn[data-action]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const actionStr = btn.getAttribute('data-action');
+    msgEl.querySelectorAll(".msg-action-btn[data-action]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const actionStr = btn.getAttribute("data-action");
         executeBotAction(actionStr);
       });
     });
@@ -453,49 +805,56 @@ Try clicking one of the suggested topics below! 👇`
 
   function formatBotMarkdown(text) {
     let html = text
-      .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
-      .replace(/\*(.*?)\*/g, '<i>$1</i>')
-      .replace(/`([^`]+)`/g, '<code>$1</code>')
-      .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener" style="color:var(--accent-secondary);text-decoration:underline;">$1</a>')
-      .replace(/\n/g, '<br/>');
+      .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
+      .replace(/\*(.*?)\*/g, "<i>$1</i>")
+      .replace(/`([^`]+)`/g, "<code>$1</code>")
+      .replace(
+        /\[(.*?)\]\((.*?)\)/g,
+        '<a href="$2" target="_blank" rel="noopener" style="color:var(--accent-secondary);text-decoration:underline;">$1</a>',
+      )
+      .replace(/\n/g, "<br/>");
     return html;
   }
 
   function executeBotAction(actionStr) {
     if (!actionStr) return;
 
-    if (actionStr.startsWith('scrollTo:')) {
-      const target = actionStr.replace('scrollTo:', '');
+    if (actionStr.startsWith("scrollTo:")) {
+      const target = actionStr.replace("scrollTo:", "");
       const el = document.querySelector(target);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({ behavior: "smooth" });
         // Close chat window on mobile
         if (window.innerWidth < 768) {
-          document.getElementById('chatbot-window').classList.remove('active');
-          document.getElementById('chatbot-toggle-btn').classList.remove('open');
+          document.getElementById("chatbot-window").classList.remove("active");
+          document
+            .getElementById("chatbot-toggle-btn")
+            .classList.remove("open");
         }
       }
-    } else if (actionStr.startsWith('openModal:')) {
-      const projectId = actionStr.replace('openModal:', '');
-      if (typeof window.openProjectModal === 'function') {
+    } else if (actionStr.startsWith("openModal:")) {
+      const projectId = actionStr.replace("openModal:", "");
+      if (typeof window.openProjectModal === "function") {
         window.openProjectModal(projectId);
       } else {
-        const modalBtn = document.querySelector(`.open-project-modal[data-id="${projectId}"]`);
+        const modalBtn = document.querySelector(
+          `.open-project-modal[data-id="${projectId}"]`,
+        );
         if (modalBtn) modalBtn.click();
       }
-    } else if (actionStr === 'openResumeModal') {
-      const resumeBtn = document.querySelector('.trigger-resume-modal');
+    } else if (actionStr === "openResumeModal") {
+      const resumeBtn = document.querySelector(".trigger-resume-modal");
       if (resumeBtn) resumeBtn.click();
     }
   }
 
   function showTypingIndicator() {
-    const container = document.getElementById('chatbot-messages');
+    const container = document.getElementById("chatbot-messages");
     if (!container) return;
 
-    const typingEl = document.createElement('div');
-    typingEl.id = 'bot-typing-indicator';
-    typingEl.className = 'chat-msg bot-msg typing-msg';
+    const typingEl = document.createElement("div");
+    typingEl.id = "bot-typing-indicator";
+    typingEl.className = "chat-msg bot-msg typing-msg";
     typingEl.innerHTML = `
       <div class="msg-bubble typing-bubble">
         <span class="typing-dot"></span>
@@ -508,20 +867,20 @@ Try clicking one of the suggested topics below! 👇`
   }
 
   function removeTypingIndicator() {
-    const el = document.getElementById('bot-typing-indicator');
+    const el = document.getElementById("bot-typing-indicator");
     if (el) el.remove();
   }
 
   function scrollToBottom() {
-    const container = document.getElementById('chatbot-messages');
+    const container = document.getElementById("chatbot-messages");
     if (container) {
       container.scrollTop = container.scrollHeight;
     }
   }
 
   // Initialize once DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initChatbot);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initChatbot);
   } else {
     initChatbot();
   }
