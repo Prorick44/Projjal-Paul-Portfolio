@@ -142,7 +142,7 @@ const PORTFOLIO_DATA = {
       description:
         "Built a real-time collaborative coding platform for technical interviews with shared coding rooms and synchronized code editing using Monaco Editor and Socket.io. Implemented Firebase-based Google authentication with protected routes, room-based access, host/attendee roles, and shareable room links. Developed real-time chat, typing indicators, code execution, code download, copy room link, and editor controls for collaborative interview sessions. Integrated WebRTC-based video conferencing to enable live interviewer-candidate communication within coding rooms.",
       highlights: [
-        "Built a real-time collaborative coding platform for technical interviews with shared coding rooms and synchronized code editing using Monaco Editor and Socket.io.",
+        "Built a real-time collaborative coding platform for technical interviews with shared coding rooms and synchronized code editing using Monaco Editor and Socket.io (<50ms sync latency).",
         "Implemented Firebase-based Google authentication with protected routes, room-based access, host/attendee roles, and shareable room links.",
         "Developed real-time chat, typing indicators, code execution, code download, copy room link, and editor controls for collaborative interview sessions.",
         "Integrated WebRTC-based video conferencing to enable live interviewer-candidate communication within coding rooms.",
@@ -172,7 +172,7 @@ const PORTFOLIO_DATA = {
       category: "frontend",
       categoryLabel: "React • Redux Toolkit",
       tagline:
-        "Dynamic weather dashboard providing live weather data for 200,000+ cities with interactive Chart.js visualizations.",
+        "Dynamic weather dashboard providing live weather data for 200,000+ cities with interactive Chart.js visualizations and smart caching.",
       image: "assets/project-2.jpg",
       featured: true,
       badge: "High Performance",
@@ -180,9 +180,9 @@ const PORTFOLIO_DATA = {
       description:
         "Developed a dynamic live weather analytics dashboard delivering instantaneous weather updates and 7-day trend forecasts for over 200,000 cities worldwide. Implemented debouncing and caching to reduce external API overhead by 40%. Integrated Chart.js for interactive visualizations of 7-day weather forecasts.",
       highlights: [
-        "Developed a dynamic dashboard providing live weather data for 200,000+ cities.",
-        "Implemented debouncing and caching to reduce API overhead by 40%.",
-        "Integrated Chart.js for interactive visualizations of 7-day weather forecasts.",
+        "Developed a dynamic dashboard providing live weather data for 200,000+ cities worldwide.",
+        "Implemented search debouncing and client-side caching to reduce external API overhead by 40%.",
+        "Integrated Chart.js for interactive visualizations of 7-day weather forecasts and temperature trends.",
       ],
       metrics: [
         { label: "Cities Covered", value: "200,000+" },
@@ -199,6 +199,164 @@ const PORTFOLIO_DATA = {
       ],
       githubUrl: "https://github.com/Prorick44/weather-app",
       liveUrl: "https://weather-app-beige-ten-65.vercel.app/",
+    },
+    {
+      id: "hate-speech-detector",
+      title: "AI Hate Speech & Toxicity Detector",
+      category: "ai-games",
+      categoryLabel: "TypeScript • AI & NLP • React",
+      tagline:
+        "Intelligent content moderation & NLP toxicity classifier analyzing text in real-time to detect, score, and flag harmful speech.",
+      image: "assets/project-ai-detector.jpg",
+      featured: true,
+      badge: "AI & NLP Classifier",
+      year: "2025",
+      description:
+        "Engineered an automated AI Hate Speech & Toxicity Detection web application using TypeScript and React. Leveraged natural language processing algorithms to parse and score text for toxic sentiments, harassment, and profane keywords. Provides visual sentiment probability gauges, flagged keyword highlights, and real-time incident logging.",
+      highlights: [
+        "Engineered a real-time NLP text classification engine scoring sentiment, harassment probability, and profanity.",
+        "Built responsive interactive dashboard with sentiment gauges, threat level meters, and keyword tag clouds.",
+        "Developed with clean TypeScript architecture and deployed as a fast serverless app on Vercel.",
+      ],
+      metrics: [
+        { label: "Architecture", value: "TypeScript/React" },
+        { label: "Core Feature", value: "NLP Toxicity Scoring" },
+        { label: "Deployment", value: "Vercel Live" },
+      ],
+      techStack: [
+        "TypeScript",
+        "React.js",
+        "NLP / AI",
+        "TailwindCSS",
+        "Vercel",
+      ],
+      githubUrl: "https://github.com/Prorick44/hate-speech-detector",
+      liveUrl: "https://hate-speech-detector.vercel.app/",
+    },
+    {
+      id: "pocket-tanks-web",
+      title: "Pocket Tanks (2D Physics Game)",
+      category: "ai-games",
+      categoryLabel: "HTML5 Canvas • JavaScript • Physics",
+      tagline:
+        "Turn-based artillery tank battle game with projectile trajectory calculations, deformable terrain physics, and explosive particles.",
+      image: "assets/project-pocket-tanks.jpg",
+      featured: true,
+      badge: "HTML5 Canvas Physics",
+      year: "2024",
+      description:
+        "Developed a classic turn-based artillery strategy tank battle game running natively in the browser via HTML5 Canvas and vanilla JavaScript. Features custom 2D projectile trajectory mechanics, gravity simulations, deformable destructible terrain, power/angle gauges, and particle explosion VFX.",
+      highlights: [
+        "Implemented 2D ballistic physics engine with angle, velocity, wind, and gravity trajectory modeling.",
+        "Engineered destructible canvas terrain deformation responding dynamically to explosion impact radius.",
+        "Built turn-based 2-player mode with score tallying, dynamic camera viewport, and weapon arsenal selection.",
+      ],
+      metrics: [
+        { label: "Engine", value: "HTML5 Canvas 2D" },
+        { label: "Frame Rate", value: "60 FPS Smooth" },
+        { label: "Platform", value: "Vercel Web" },
+      ],
+      techStack: [
+        "JavaScript (ES6+)",
+        "HTML5 Canvas",
+        "Physics Engine",
+        "CSS3",
+        "Vercel",
+      ],
+      githubUrl: "https://github.com/Prorick44/pocket-tanks",
+      liveUrl: "https://pocket-tanks.vercel.app/",
+    },
+    {
+      id: "pocket-tanks-mobile",
+      title: "Pocket Tanks Mobile Edition",
+      category: "ai-games",
+      categoryLabel: "Mobile Canvas • Touch Gestures",
+      tagline:
+        "Mobile-optimized edition of Pocket Tanks with touch gestures, adaptive canvas viewport scaling, and responsive controls.",
+      image: "assets/project-pocket-tanks.jpg",
+      featured: false,
+      badge: "Mobile Touch Game",
+      year: "2024",
+      description:
+        "Optimized mobile edition of Pocket Tanks engineered specifically for smartphone and tablet viewports. Implemented touch gesture controls for aiming angle and power, responsive pixel-density scaling, and optimized render loops for smooth mobile gameplay.",
+      highlights: [
+        "Integrated multi-touch gesture listeners for dynamic aiming and power slider adjustment.",
+        "Engineered adaptive mobile viewport scaling maintaining aspect ratio across diverse mobile displays.",
+        "Optimized memory footprint and draw calls for stutter-free 60 FPS mobile browser execution.",
+      ],
+      metrics: [
+        { label: "Input", value: "Touch Gestures" },
+        { label: "Viewport", value: "Mobile Responsive" },
+        { label: "Deployment", value: "Vercel Live" },
+      ],
+      techStack: [
+        "JavaScript",
+        "HTML5 Canvas",
+        "Touch Events API",
+        "CSS3",
+        "Vercel",
+      ],
+      githubUrl: "https://github.com/Prorick44/pocket-tanks-mobile",
+      liveUrl: "https://pocket-tanks-mobile.vercel.app/",
+    },
+    {
+      id: "2048-puzzle-game",
+      title: "2048 Number Sliding Puzzle",
+      category: "ai-games",
+      categoryLabel: "JavaScript • CSS Grid • Game Matrix",
+      tagline:
+        "Addictive sliding tile puzzle game with fluid CSS grid animations, undo state history, touch swipe gestures, and high-score saving.",
+      image: "assets/project-2048.jpg",
+      featured: false,
+      badge: "Interactive Puzzle",
+      year: "2024",
+      description:
+        "Built a responsive, modern edition of the 2048 tile-sliding puzzle game using vanilla JavaScript and CSS Grid animations. Features 4x4 matrix mathematical shifting logic, score calculation, move history undo stack, keyboard arrow keys, and mobile touch swipe controls with LocalStorage persistence.",
+      highlights: [
+        "Engineered 4x4 grid matrix transformation algorithm handling tile merges and spontaneous tile spawning.",
+        "Added touch swipe gesture listeners alongside keyboard controls for seamless cross-device play.",
+        "Implemented score tracking, best score persistence via LocalStorage, and smooth transition keyframes.",
+      ],
+      metrics: [
+        { label: "Matrix", value: "4x4 Grid Logic" },
+        { label: "Input", value: "Keyboard + Swipe" },
+        { label: "Deployment", value: "Vercel Live" },
+      ],
+      techStack: [
+        "JavaScript (ES6+)",
+        "CSS Grid",
+        "LocalStorage",
+        "Vercel",
+      ],
+      githubUrl: "https://github.com/Prorick44/2048-game",
+      liveUrl: "https://2048-game-self.vercel.app/",
+    },
+    {
+      id: "note-app",
+      title: "Note App - Minimalist Workspace",
+      category: "frontend",
+      categoryLabel: "React • Notes • Productivity",
+      tagline:
+        "Clean note-taking web app for creating, organizing, and managing personal notes with a lightweight user experience.",
+      image: "assets/project-note-app.jpg",
+      featured: false,
+      badge: "Productivity App",
+      year: "2024",
+      description:
+        "Built a modern note-taking web application with a clean interface for creating, editing, and deleting notes. Focused on simplicity, responsive layout, and smooth interactions to make everyday personal organization easier and faster.",
+      highlights: [
+        "Designed a simple and responsive notes interface for quick daily personal organization.",
+        "Included structured note creation, editing, and removal flows with instant client-side state updates.",
+        "Focused on lightweight UX, readability, and fast interactions for repeated daily productivity.",
+      ],
+      metrics: [
+        { label: "Use Case", value: "Personal Notes" },
+        { label: "Experience", value: "Instant State" },
+        { label: "Deployment", value: "Vercel Dashboard" },
+      ],
+      techStack: ["React.js", "JavaScript", "CSS3", "Vercel"],
+      githubUrl: "https://github.com/Prorick44/note-app",
+      liveUrl: "https://vercel.com/projjal2002-9212s-projects/note-app",
     },
     {
       id: "algorithmic-code-vault",
@@ -224,7 +382,7 @@ const PORTFOLIO_DATA = {
         { label: "Contests", value: "20+ Contests" },
       ],
       techStack: ["C++", "Java", "Python", "DSA", "CodeChef", "Git"],
-      githubUrl: "https://github.com/Prorick44",
+      githubUrl: "https://github.com/Prorick44/coding-practice",
       liveUrl: "https://www.codechef.com/users/projjal2002",
     },
     {
@@ -235,7 +393,7 @@ const PORTFOLIO_DATA = {
       tagline:
         "Suite of 5+ responsive web applications achieving 90+ Lighthouse scores, RESTful APIs, and Redux Toolkit state management.",
       image: "assets/project-4.jpg",
-      featured: true,
+      featured: false,
       badge: "90+ Lighthouse",
       year: "2023 – Present",
       description:
@@ -262,33 +420,6 @@ const PORTFOLIO_DATA = {
       ],
       githubUrl: "https://github.com/Prorick44",
       liveUrl: "https://github.com/Prorick44",
-    },
-    {
-      id: "note-app",
-      title: "Note App",
-      category: "frontend",
-      categoryLabel: "React • Notes • Productivity",
-      tagline:
-        "Clean note-taking web app for creating, organizing, and managing personal notes with a lightweight user experience.",
-      image: "assets/project-2.jpg",
-      featured: false,
-      badge: "Productivity App",
-      year: "2024",
-      description:
-        "Built a modern note-taking web application with a clean interface for creating, editing, and deleting notes. Focused on simplicity, responsive layout, and smooth interactions to make everyday personal organization easier and faster.",
-      highlights: [
-        "Designed a simple and responsive notes interface for quick daily usage.",
-        "Included structured note creation, editing, and removal flows for a clean workflow.",
-        "Focused on lightweight UX, readability, and fast interactions for repeated use.",
-      ],
-      metrics: [
-        { label: "Use Case", value: "Notes" },
-        { label: "Experience", value: "Fast UX" },
-        { label: "Deployment", value: "Vercel" },
-      ],
-      techStack: ["React.js", "JavaScript", "CSS3", "Vercel"],
-      githubUrl: "https://github.com/Prorick44",
-      liveUrl: "https://vercel.com/projjal2002-9212s-projects/note-app",
     },
   ],
 
@@ -401,19 +532,31 @@ Location: West Bengal, India | Open for Full-Time Opportunities.`,
 - <b>Competitive</b>  : CodeChef 3-Star (1600+ Rating), 1000+ Problems Solved, 20+ Contests
 - <b>Languages</b>    : English (Professional), Bengali (Native), Hindi (Conversational)`,
 
-    projects: `Featured Projects:
+    projects: `Featured Projects & Vercel Deployments:
 1. <b>Real-Time Interview Platform (CodeCollab)</b> [2025]
    • Tech: React.js | Node.js | Express.js | Socket.io | Monaco Editor | Firebase | WebRTC
-   • Highlights: Shared coding rooms, Monaco editor sync, WebRTC video calls, live chat, code execution.
-2. <b>Real-Time Weather Dashboard</b> [2024]
-   • Tech: React | Redux Toolkit | OpenWeather API | Chart.js
-   • Highlights: Live weather for 200,000+ cities, 40% API reduction via debouncing/caching, 7-day charts.
-3. <b>1000+ Algorithmic Problem Solving & Competitive Vault</b> [2023-Present]
-   • Tech: C++, Java, Python, DSA, CodeChef
-   • Highlights: CodeChef 3★ (1600+ rating), Top 10% in various contests, 20+ contests.
-4. <b>Full Stack Web Development Suite</b> [2023-Present]
-   • Tech: MERN Stack, MySQL, Redux Toolkit, Render, Vercel
-   • Highlights: 5+ personal projects, 90+ Lighthouse performance score.`,
+   • Demo: <a href="https://real-time-interview-prep-project.vercel.app/" target="_blank" style="color:var(--accent-secondary);">real-time-interview-prep-project.vercel.app</a>
+2. <b>Real-Time Weather Analytics Dashboard</b> [2024]
+   • Tech: React.js | Redux Toolkit | OpenWeather API | Chart.js
+   • Demo: <a href="https://weather-app-beige-ten-65.vercel.app/" target="_blank" style="color:var(--accent-secondary);">weather-app-beige-ten-65.vercel.app</a>
+3. <b>AI Hate Speech & Toxicity Detector</b> [2025]
+   • Tech: TypeScript | React.js | NLP Classifier | TailwindCSS
+   • Demo: <a href="https://hate-speech-detector.vercel.app/" target="_blank" style="color:var(--accent-secondary);">hate-speech-detector.vercel.app</a>
+4. <b>Pocket Tanks 2D Physics Game (Web Edition)</b> [2024]
+   • Tech: HTML5 Canvas | JavaScript | 2D Ballistic Physics
+   • Demo: <a href="https://pocket-tanks.vercel.app/" target="_blank" style="color:var(--accent-secondary);">pocket-tanks.vercel.app</a>
+5. <b>Pocket Tanks Mobile Edition (Touch UI)</b> [2024]
+   • Tech: Mobile Canvas | Touch Gestures | JavaScript
+   • Demo: <a href="https://pocket-tanks-mobile.vercel.app/" target="_blank" style="color:var(--accent-secondary);">pocket-tanks-mobile.vercel.app</a>
+6. <b>2048 Number Sliding Puzzle</b> [2024]
+   • Tech: JavaScript | CSS Grid | Matrix Logic | LocalStorage
+   • Demo: <a href="https://2048-game-self.vercel.app/" target="_blank" style="color:var(--accent-secondary);">2048-game-self.vercel.app</a>
+7. <b>Note App - Minimalist Workspace</b> [2024]
+   • Tech: React.js | JavaScript | CSS3
+   • Demo: <a href="https://vercel.com/projjal2002-9212s-projects/note-app" target="_blank" style="color:var(--accent-secondary);">vercel.com/projjal2002-9212s-projects/note-app</a>
+8. <b>1000+ Algorithmic Problem Solving & Vault</b> [2023-Present]
+   • Tech: C++ | Java | Python | DSA | CodeChef 3★
+   • CodeChef: <a href="https://www.codechef.com/users/projjal2002" target="_blank" style="color:var(--accent-secondary);">codechef.com/users/projjal2002</a>`,
 
     education: `Academic Qualifications:
 1. <b>B.Tech in Computer Science</b> (2021 – 2025)

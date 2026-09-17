@@ -1,0 +1,21 @@
+{
+  "name": "projjal-paul-portfolio",
+  "version": "3.0.0",
+  "description": "Ultra-modern portfolio website of Projjal Paul with AI Chatbot Copilot",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "serve": "node server.js",
+    "build": "echo 'Static assets ready for deployment'"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "fullstack",
+    "ai-chatbot",
+    "mern"
+  ],
+  "author": "Projjal Paul",
+  "license": "MIT"
+}
