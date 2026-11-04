@@ -22,7 +22,7 @@ const PORTFOLIO_DATA = {
     availabilityStatus: "available", // 'available' | 'busy' | 'exploring'
     location: "West Bengal, India",
     phone: "+91-9073481347",
-    email: "projjal2003@gmail.com",
+    email: "projjal2002@gmail.com",
     github: "https://github.com/Prorick44",
     linkedin: "https://linkedin.com/in/projjal2002",
     codechef: "https://www.codechef.com/users/projjal2002",
@@ -459,7 +459,7 @@ const PORTFOLIO_DATA = {
       degree: "B.Tech in Computer Science",
       institution: "Future Institute of Engineering and Management",
       period: "2021 – 2025",
-      score: "CGPA: 8.58",
+      score: "CGPA: 8.53",
       location: "Kolkata, West Bengal",
       details:
         "Focused on Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, and Web Application Architecture.",
@@ -491,7 +491,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Academic Excellence",
-      desc: "Consistently maintained a high CGPA (8.58) in B.Tech Computer Science while balancing technical projects.",
+      desc: "Consistently maintained a high CGPA (8.53) in B.Tech Computer Science while balancing technical projects.",
     },
     {
       title: "Technical Mentor",
@@ -587,7 +587,7 @@ Location: West Bengal, India | Open for Full-Time Opportunities.`,
 
     contact: `Contact Details:
 - <b>Phone</b>    : +91-9073481347
-- <b>Email</b>    : projjal2003@gmail.com
+- <b>Email</b>    : projjal2002@gmail.com
 - <b>LinkedIn</b> : linkedin.com/in/projjal2002
 - <b>GitHub</b>   : github.com/Prorick44
 - <b>Location</b> : West Bengal, India`,
