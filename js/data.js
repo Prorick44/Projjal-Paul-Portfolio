@@ -50,7 +50,7 @@ const PORTFOLIO_DATA = {
           degree: "B.Tech in Computer Science",
           institution: "Future Institute of Engineering and Management",
           year: "2021 – 2025",
-          score: "CGPA: 8.58",
+          score: "CGPA: 8.53",
         },
         {
           degree: "Higher Secondary (CBSE)",
